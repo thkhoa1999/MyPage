@@ -1,0 +1,21 @@
+#myBanner {
+    img {
+        position: relative;
+        opacity: 0.9;
+        width: 100vw;
+        height: 30vw;
+    }
+    .title {
+        position: absolute;
+        bottom: 50%;
+        right: 25%;
+        left: 25%;
+        background-color: black;
+        color: white;
+        padding-left: 50px;
+        padding-right: 20px;
+        h4 {
+            margin-top: 20px;
+        }
+    }
+}
