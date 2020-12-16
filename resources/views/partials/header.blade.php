@@ -37,9 +37,5 @@
                 </li>
             </ul>
         </div>
-        <div>
-            dddddddddddddddd
-        </div>
-
     </nav>
 </header>
