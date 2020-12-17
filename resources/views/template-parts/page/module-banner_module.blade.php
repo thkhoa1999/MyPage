@@ -22,12 +22,24 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="{{$data->banner[0]->url}}" alt="Los Angeles">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{$data->banner[0]->title}}</h5>
+        <p>{{$data->banner[0]->description}}</p>
+      </div>
     </div>
     <div class="carousel-item">
       <img src="{{$data->banner[1]->url}}" alt="Chicago">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{$data->banner[1]->title}}</h5>
+        <p>{{$data->banner[1]->description}}</p>
+      </div>
     </div>
     <div class="carousel-item">
       <img src="{{$data->banner[2]->url}}" alt="New York">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{$data->banner[2]->title}}</h5>
+        <p>{{$data->banner[2]->description}}</p>
+      </div>
     </div>
   </div>
 

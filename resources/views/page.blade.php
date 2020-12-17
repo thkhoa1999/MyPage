@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-  <div class="space-100"></div>
+ <div class="space-100"></div>
   @while (have_posts()) @php the_post() @endphp
     @if (have_rows('c8_templates'))
       @php $i=0; @endphp
