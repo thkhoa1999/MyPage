@@ -104,4 +104,35 @@ class Queries
         return $content;
     }
 
+    public static function getSubcontent()
+    {
+        $args = [
+            'post_type' => 'subcontent_code'
+        ];
+        $queryAll = new \WP_Query($args);
+        $subcontent = [];
+
+        if($queryAll->post_count >0)
+        {
+            $subcontent = array_map(function($subcontent){
+                $name = get_field('name',$subcontent);
+                $description = get_field('description',$subcontent);
+
+
+                return (object)[
+                    'name' => $name,
+                    'description' => $description,
+                    'alt' => $Imgalt,
+                    'caption' => $Imgcaption,
+                    'thumb' => $thumb,
+                    'width' => $width,
+                    'height' => $height,
+                ];
+            },$queryAll->posts);
+
+            wp_reset_postdata();
+        }
+        return $subcontent;
+    }
+
 }

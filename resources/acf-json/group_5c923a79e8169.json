@@ -18,7 +18,7 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1608002061,
+    "modified": 1608169045,
     "fields": [
         {
             "key": "field_5c923a83d29a1",
@@ -105,6 +105,15 @@
                     "key": "layout_5fd82623e5d04",
                     "name": "content_module",
                     "label": "ContentModule",
+                    "display": "block",
+                    "sub_fields": [],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fdab655de9c5": {
+                    "key": "layout_5fdab655de9c5",
+                    "name": "Subcontent",
+                    "label": "SubcontentModule",
                     "display": "block",
                     "sub_fields": [],
                     "min": "",
