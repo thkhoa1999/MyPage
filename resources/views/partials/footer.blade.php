@@ -1,5 +1,5 @@
 <div class="space-100"></div>
-<footer id="footer" class="module footer mt-auto px-5 pt-5 pb-2"">
+<footer id="footer" class="module footer px-5 pt-5 pb-2"">
   {{-- <div class="container footer-top">
     <div class="row">
       @php
@@ -30,6 +30,19 @@
                 <ul>
                     <li><a href="#">Diệp Tư Thinh</a></li>
                     <li><a href="#">Trương Hoàng Khoa</a></li>
+                    <li><a href="#">                
+                      <div>
+                          @php
+                          wp_nav_menu(array(
+                          'theme_location' => 'footer',
+                          'items_wrap' => '%3$s',
+                          'container' => false,
+                          'depth' => 2,
+                          //'walker' => new App\Libs\Services\Nav\C8ThemeFooterMenu()
+                          ));
+                          @endphp
+                        </div>
+                    </a></li>
                 </ul>
             </div>
             <div class="col-md-4 text-center mt-md-0 mt-2"><b>SOCIAL</b>
@@ -47,6 +60,7 @@
                 </address>
             </div>
         </div>
+
         <hr />
         <p>© @php echo Date("Y") @endphp See you later.</p>
     </div>
