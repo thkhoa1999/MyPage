@@ -1,4 +1,4 @@
-{{-- <div class="fluid-container" id="myBanner">
+ <!-- <div class="fluid-container" id="myBanner">
  <img src="{{$data->banner[0]->url}}" alt="">
  <img src="{{$data->banner[1]->url}}" alt="">
   <img src="{{$data->banner[2]->url}}" alt="">
@@ -6,7 +6,7 @@
     <h4>{{$data->banner[0]->title}}</h4>
     <p>{{$data->banner[0]->description}}</p>
   </div>
-</div> --}}
+</div>  -->
 <div class="fluid-container" id="myBanner">
 
 <div id="demo" class="carousel slide" data-ride="carousel">
