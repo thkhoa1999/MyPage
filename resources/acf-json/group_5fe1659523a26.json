@@ -1,14 +1,14 @@
 {
-    "key": "group_5fd81e9d35e64",
-    "title": "Content field",
+    "key": "group_5fe1659523a26",
+    "title": "Sub Field",
     "fields": [
         {
-            "key": "field_5fd81ebd971bd",
+            "key": "field_5fe165a36b6f2",
             "label": "Title",
             "name": "title",
             "type": "text",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -22,12 +22,12 @@
             "maxlength": ""
         },
         {
-            "key": "field_5fd81ef8971be",
+            "key": "field_5fe165b06b6f3",
             "label": "Image",
             "name": "image",
             "type": "image",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -35,7 +35,7 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "full",
+            "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -46,10 +46,10 @@
             "mime_types": ""
         },
         {
-            "key": "field_5fd81f59971bf",
+            "key": "field_5fe165cd6b6f4",
             "label": "Description",
             "name": "description",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -60,12 +60,12 @@
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_5fd81f77971c0",
+            "key": "field_5fe165e86b6f5",
             "label": "Url",
             "name": "url",
             "type": "url",
@@ -86,7 +86,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "content_code"
+                "value": "sub_code"
             }
         ]
     ],
@@ -98,5 +98,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1608605009
+    "modified": 1608607249
 }

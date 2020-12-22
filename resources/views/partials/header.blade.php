@@ -54,22 +54,22 @@
           </div>
           <div class="text-md-right" id="header-top-right">
               <ul class="d-flex justify-content-end">
-                  <li class="mx-1">
+                  <li class="mx-4">
                       <div>
-                          <a class="d-flex link-white" href="#">
-                              <div><i class="far fa-bell"></i></div><span>&nbsp;Thông báo</span>
+                          <a class="d-flex link-white" href="http://localhost:3000/sub-project/">
+                              <div><i class="far fa-bell"></i></div><span>&nbsp;Sub Page</span>
                           </a>
                       </div>
                   </li>
-                 <li class="mx-1">
+                 <li class="mx-3">
                       <div>
                           <a class="d-flex link-white" href="#">
                               <div><i class="far fa-question-circle"></i></div><span>&nbsp;Trợ giúp</span>
                           </a>
                       </div>
                   </li>
-                  <li class="mx-1"><a href="#" class="link-white">Đăng ký</a></li>
-                  <li class="mx-1"><a href="#" class="link-white">Đăng nhập</a></li>
+                  <li class="mx-3"><a href="#" class="link-white">Đăng ký</a></li>
+                  <li class="mx-3"><a href="#" class="link-white">Đăng nhập</a></li>
               </ul>
           </div>
       </div>

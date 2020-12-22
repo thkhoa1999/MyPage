@@ -104,4 +104,51 @@ class Queries
         return $content;
     }
 
+    public static function getSub()
+    {
+        $args = [
+            'post_type' => 'sub_code'
+        ];
+        $queryAll = new \WP_Query($args);
+        $sub = [];
+
+        if($queryAll->post_count >0)
+        {
+            $sub = array_map(function($sub){
+                $title = get_field('title',$sub);
+                $image = get_field('image',$sub);
+                $description = get_field('description',$sub);
+
+                $url = $image['url'];
+                $Imgtitle = $image['title'];
+                $Imgalt = $image['alt'];
+                $Imgcaption = $image['caption'];
+
+
+                $size = 'medium';
+                $thumb = $image['sizes'][$size];
+                $width = $image['sizes'][$size. '-width'];
+                $height = $image['sizes'][$size. '-height'];
+
+                return (object)[
+                    'title' => $title,
+                    'url' => $url,
+                    'url' => $url,
+                    'description' => $description,
+                    //$image['url'] => $ImgUrl,
+                    $image['title'] => $Imgtitle,
+                    'alt' => $Imgalt,
+                    'caption' => $Imgcaption,
+                    'thumb' => $thumb,
+                    'width' => $width,
+                    'height' => $height,
+                ];
+            },$queryAll->posts);
+
+            wp_reset_postdata();
+        }
+        return $sub;
+    }
+
+
 }

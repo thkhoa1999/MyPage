@@ -30,19 +30,7 @@
                 <ul>
                     <li><a href="#">Diệp Tư Thinh</a></li>
                     <li><a href="#">Trương Hoàng Khoa</a></li>
-                    <li><a href="#">                
-                      <div>
-                          @php
-                          wp_nav_menu(array(
-                          'theme_location' => 'footer',
-                          'items_wrap' => '%3$s',
-                          'container' => false,
-                          'depth' => 2,
-                          //'walker' => new App\Libs\Services\Nav\C8ThemeFooterMenu()
-                          ));
-                          @endphp
-                        </div>
-                    </a></li>
+                    <li><a href=" //localhost:3000/sub-project/">Sub Project</a></li>
                 </ul>
             </div>
             <div class="col-md-4 text-center mt-md-0 mt-2"><b>SOCIAL</b>
@@ -53,7 +41,6 @@
             </div>
             <div class="col-md-4 text-center mt-md-0 mt-2"><b>CONTACT US</b>
                 <address>
-                    
                     1355 Vo Thi Sau Street, Suite 900<br>
                     Nha Trang, Khanh hoa<br>
                     <abbr title="Phone">P:</abbr> (123) 456-7890
