@@ -150,5 +150,50 @@ class Queries
         return $sub;
     }
 
+    public static function getSub2()
+    {
+        $args = [
+            'post_type' => 'sub2_code'
+        ];
+        $queryAll = new \WP_Query($args);
+        $sub2 = [];
+
+        if($queryAll->post_count >0)
+        {
+            $sub2 = array_map(function($sub2){
+                $title = get_field('title',$sub2);
+                $image = get_field('image',$sub2);
+                $description = get_field('description',$sub2);
+
+                $url = $image['url'];
+                $Imgtitle = $image['title'];
+                $Imgalt = $image['alt'];
+                $Imgcaption = $image['caption'];
+
+
+                $size = 'medium';
+                $thumb = $image['sizes'][$size];
+                $width = $image['sizes'][$size. '-width'];
+                $height = $image['sizes'][$size. '-height'];
+
+                return (object)[
+                    'title' => $title,
+                    'url' => $url,
+                    'url' => $url,
+                    'description' => $description,
+                    //$image['url'] => $ImgUrl,
+                    $image['title'] => $Imgtitle,
+                    'alt' => $Imgalt,
+                    'caption' => $Imgcaption,
+                    'thumb' => $thumb,
+                    'width' => $width,
+                    'height' => $height,
+                ];
+            },$queryAll->posts);
+
+            wp_reset_postdata();
+        }
+        return $sub2;
+    }
 
 }
